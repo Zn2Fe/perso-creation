@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --background-color-dark:grey;
+    --background-color-light:white;
+    --text-color-dark:white;
+    --text-color-light:black;
+}

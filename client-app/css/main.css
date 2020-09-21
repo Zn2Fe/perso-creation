@@ -1,0 +1,9 @@
+.navbar {
+	display: flex;
+	min-height: 8vh;
+    padding: 0em 1em;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+}
