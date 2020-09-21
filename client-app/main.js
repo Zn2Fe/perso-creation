@@ -1,13 +1,35 @@
 // #region class definition
 class perso{
-    constructor(_id,_data){
+    constructor(_id){
         this.id = _id;
-        this.data = _data;
     }
+}
+class perso_category{
+    constructor(_id){
+        this.id = _id;
+    }
+    name;
+    group;
+    description;
+}
+class perso_data extends perso_category{
+    value;
+}
+class item{
+    constructor(_id){
+        this.id = _id;
+    }
+}
+class timeline{
+    constructor(_id){
+        this.id = _id;
+    }
+    perso_list;
 }
 // #endregion
 
 // #region global variables
-let persolist = [];
-let itemlist = [];
+let timeline_list = [];
+let perso_category_initial_list = [];
+let perso_category_list = [];
 // //#endregion
