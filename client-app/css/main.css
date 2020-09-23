@@ -9,13 +9,8 @@ ul{
     display: flex;
     padding-left: 1vh;
 }
-.sidebar {
-    position: fixed;
-    width: 10%;
-    height: calc(100em);
-}
 .main-timeline,.main-perso{
-    margin-left: 10%;
+    /*! margin-left: 10%; */
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,auto));
 }

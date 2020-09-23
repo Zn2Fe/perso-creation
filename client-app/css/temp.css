@@ -1,34 +1,55 @@
+body{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 2fr 12fr;
+}
 .navbar{
   background : linear-gradient(0.75turn,#666580, #333240);
+  grid-column: 1/-1;
 }
 .sidebar{
   background-color: #666580
 }
-.main-timeline .toolbar{
+.toolbar{
   background-color: #9997BF;
   margin: 0px -12px;
 }
-.main-timeline{
+.main-timeline,.main-perso{
   grid-gap: 1em;
   padding: 0px 12px;
 }
-.timeline{
+.timeline,.perso{
   border-radius: 1em;
-  min-height: 10em;
   background-color: #ececec;
   padding: 0.7em 1em;
   border: solid 1px grey;
   box-shadow: 5px 5px 10px #80808038;
+}
+.timeline{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 1.2em;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  min-height: 10em;
 }
-.timeline-name{
-  grid-column:1/-1;
+.perso-container{
+  display: grid;
 }
-.timeline-graph{
- grid-column:1/-2; 
+.perso-timestamp-name{
+  position: relative;
+  display: flex;
+  /*! justify-content: left; */
+  top: -2em;
 }
-.timeline-img{
-  grid-column: -2/-1
+.perso{
+  /*! border-top: none; */
+  margin-top: 1em;
+}
+.timestamp-title{
+  border-left: solid 1px gray;
+  border-bottom: solid 1px #ececec;
+  border-top: solid 1px gray;
+  padding: 0em 0.2em;
+  border-radius: 0.2em 0.2em 0em 0em;
+  transform: skew(-10deg,0deg);
+  background-color: #ececec;
 }
