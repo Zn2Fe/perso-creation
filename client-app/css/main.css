@@ -1,9 +1,25 @@
 .navbar {
 	display: flex;
-	min-height: 8vh;
+	min-height: 5vh;
     padding: 0em 1em;
     width: 100%;
 }
-.sidebar{
+ul{
+    list-style: none;
+    display: flex;
+    padding-left: 1vh;
+}
+.sidebar {
     position: fixed;
+    width: 10%;
+    height: calc(100em);
+}
+.main-timeline,.main-perso{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+}
+.toolbar{
+    grid-column: 1/-1;
+    height:30px;
 }
